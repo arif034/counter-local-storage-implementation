@@ -1,5 +1,14 @@
 import "./styles.css";
-
-export default function App() {
-  return <div className="App"></div>;
+import { Component } from "react";
+import CounterComponent from "./CounterComponent";
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <CounterComponent />
+      </div>
+    );
+  }
 }
+
+export default App;
